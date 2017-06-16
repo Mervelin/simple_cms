@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails simple_cms: test" uuid="242cc960-15a0-4eb0-9f3a-86608d48e303">
+      <database-info product="MySQL" version="5.7.18-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <user-name>rails_user</user-name>
+      <introspection-schemas>*:simple_cms_test</introspection-schemas>
+    </data-source>
+    <data-source name="Rails simple_cms: development" uuid="7c1de834-5c61-40a1-92de-bb4c28612c63">
+      <database-info product="MySQL" version="5.7.18-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <user-name>rails_user</user-name>
+      <introspection-schemas>*:simple_cms_development</introspection-schemas>
+    </data-source>
+    <data-source name="Rails simple_cms: production" uuid="81be6911-cf0e-40b8-a2a2-c8780047f323">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>simple_cms</user-name>
+    </data-source>
+  </component>
+</project>
