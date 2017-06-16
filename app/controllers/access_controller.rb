@@ -1,6 +1,8 @@
 class AccessController < ApplicationController
   layout 'admin'
 
+  skip_before_action :confirm_logged_in, except: 'menu'
+
   def menu
     # display text & links
   end
@@ -33,4 +35,6 @@ class AccessController < ApplicationController
     flash[:notice] = 'Logged out'
     redirect_to(access_login_path)
   end
+
+
 end
