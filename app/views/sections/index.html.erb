@@ -1,7 +1,13 @@
+<% @page_title = 'All Sections' %>
+
+<%= link_to('<< Back to Menu', admin_path, class: 'back-link') %>
+
 <div class="sections index">
   <h2>Sections</h2>
 
-  <%= link_to("Add New section", new_section_path, :class => 'action_new') %>
+  <%= link_to('Add New section', new_section_path, class: 'action_new') %>
+
+  <div><%= pluralize(@sections.size, 'section') %> found</div>
 
   <table class="listing" summary="section list">
     <tr class="header">
@@ -18,9 +24,9 @@
       <td><%= section.name %></td>
       <td class="center"> <%= status_tag(section.visible) %></td>
       <td class="actions">
-        <%= link_to("Show", section_path(section), :class => 'action show') %>
-        <%= link_to("Edit", edit_section_path(section), :class => 'action edit') %>
-        <%= link_to("Delete", delete_section_path(section), :class => 'action delete') %>
+        <%= link_to('Show', section_path(section), class: 'action show') %>
+        <%= link_to('Edit', edit_section_path(section), class: 'action edit') %>
+        <%= link_to('Delete', delete_section_path(section), class: 'action delete') %>
       </td>
     </tr>
     <% end %>
