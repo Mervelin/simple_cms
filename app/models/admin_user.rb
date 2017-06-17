@@ -6,6 +6,9 @@ class AdminUser < ApplicationRecord
   has_many :section_edits
   has_many :sections, through: :section_edits
 
+  scope :sorted, -> { order('last_name,first_name ASC') }
+
+
   EMAIL_REGEX = /\A[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}\Z/i
   FORBIDDEN_USERNAMES = %w[littlebopeep humptydumpty marymary].freeze
   validates :first_name, presence: true, length: { maximum: 25 }
@@ -16,6 +19,10 @@ class AdminUser < ApplicationRecord
 
   validate :username_is_allowed
   # validate :no_new_users_on_friday, on: :create
+
+  def name
+    "#{first_name} #{last_name}"
+  end
 
   private
 
