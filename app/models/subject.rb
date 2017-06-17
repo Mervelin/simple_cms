@@ -1,4 +1,7 @@
 class Subject < ApplicationRecord
+
+  acts_as_list
+
   has_many :pages
 
   scope :visible, -> { where(visible: true) }

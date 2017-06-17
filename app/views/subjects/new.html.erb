@@ -1,16 +1,16 @@
-<% @page_title = "New Subject" %>
+<% @page_title = 'New Subject' %>
 
-<%= link_to("<< Back to List", subjects_path, :class => 'back-link') %>
+<%= link_to('<< Back to List', subjects_path, class: 'back-link') %>
 
 <div class="subjects new">
   <h2>Create Subject</h2>
 
-  <%= form_for(@subject, :url => subjects_path, :method => 'post') do |f| %>
+  <%= form_for(@subject, url: subjects_path, method: 'post') do |f| %>
 
-    <%= render(:partial => 'form', :locals => {:f => f}) %>
+    <%= render(partial: 'form', locals: {f: f}) %>
 
     <div class="form-buttons">
-      <%= f.submit("Create Subject") %>
+      <%= f.submit('Create Subject') %>
     </div>
 
   <% end %>
